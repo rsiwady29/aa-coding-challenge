@@ -8,5 +8,6 @@ class AsciiConcatenator:
         return result
 
 #Testcases
-ac = AsciiConcatenator()
-assert ac.concat(["aa", "bb", "cc"]) == "aa99bb97cc98"
+if __name__ == '__main__':
+    ac = AsciiConcatenator()
+    assert ac.concat(["aa", "bb", "cc"]) == "aa99bb97cc98"

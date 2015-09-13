@@ -17,5 +17,6 @@ class WordSplitter:
         return newList
 
 #Testcases
-ws = WordSplitter()
-assert ws.splitwords(["a", "cat","cats", "two", "dogs"], ['acat', "twodogs"]  ) == ["a", "cat", "two", "dogs"]
+if __name__ == '__main__':
+    ws = WordSplitter()
+    assert ws.splitwords(["a", "cat","cats", "two", "dogs"], ['acat', "twodogs"]  ) == ["a", "cat", "two", "dogs"]

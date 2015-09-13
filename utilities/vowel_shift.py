@@ -20,6 +20,7 @@ class VowelShift:
         return newListOfWords
 
 #Testcases
-vs = VowelShift()
-assert vs.shiftVowels([]) == []
-assert vs.shiftVowels(["abc", "bca", "aa", "hello"]) == ["bac", "abc", "aa", "ohlel"]
+if __name__ == '__main__':
+    vs = VowelShift()
+    assert vs.shiftVowels([]) == []
+    assert vs.shiftVowels(["abc", "bca", "aa", "hello"]) == ["bac", "abc", "aa", "ohlel"]

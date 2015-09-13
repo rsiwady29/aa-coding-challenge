@@ -25,11 +25,12 @@ class Fibonacci:
         return newList
 
 # Testcases
-fib = Fibonacci()
+if __name__ == '__main__':
+    fib = Fibonacci()
 
-#fib
-assert fib.fib(0) == (0,1)
-assert fib.fib(6765) == (4181,6765)
-assert fib.fib(144) == (89,144)
-#replaceVowelsWithFib
-assert fib.replaceVowelsWithFib( ["aa", "ba", "cc"] , 1597 ) == ['15972584', 'b4181', 'cc']
+    #fib
+    assert fib.fib(0) == (0,1)
+    assert fib.fib(6765) == (4181,6765)
+    assert fib.fib(144) == (89,144)
+    #replaceVowelsWithFib
+    assert fib.replaceVowelsWithFib( ["aa", "ba", "cc"] , 1597 ) == ['15972584', 'b4181', 'cc']

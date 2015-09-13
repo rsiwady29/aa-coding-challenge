@@ -16,6 +16,7 @@ class ConsonantToggler:
         return newList
 
 #Testcases
-ct = ConsonantToggler()
-assert ct.alternateConsonant(["abcd","edf"]) == ['abCd', 'eDf']
-assert ct.alternateConsonant(["Abcd","edf"]) == ['ABcD', 'edF']
+if __name__ == '__main__':
+    ct = ConsonantToggler()
+    assert ct.alternateConsonant(["abcd","edf"]) == ['abCd', 'eDf']
+    assert ct.alternateConsonant(["Abcd","edf"]) == ['ABcD', 'edF']
