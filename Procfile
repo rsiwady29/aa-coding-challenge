@@ -1,1 +1,1 @@
-web: python solver.py
+web: python main.py
