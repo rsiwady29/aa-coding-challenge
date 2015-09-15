@@ -1,6 +1,6 @@
 class ConsonantToggler:
     def alternateConsonant(self, wordList):
-        vowels = "aeiou"
+        vowels = "aeiouy"
         newList = []
         isCaps = wordList[0][0].isupper()
         for word in wordList:
@@ -20,3 +20,4 @@ if __name__ == '__main__':
     ct = ConsonantToggler()
     assert ct.alternateConsonant(["abcd","edf"]) == ['abCd', 'eDf']
     assert ct.alternateConsonant(["Abcd","edf"]) == ['ABcD', 'edF']
+    assert ct.alternateConsonant(["DoG", "CaT", "BiRd"]) == ["Dog", "Cat", "BirD"]

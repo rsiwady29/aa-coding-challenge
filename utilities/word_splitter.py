@@ -6,7 +6,7 @@ class WordSplitter:
             i = 1
             curWord = word[0]
             while i < len(word):
-                if (curWord in englishWordList):
+                if (curWord.lower() in englishWordList):
                     newList += [curWord]
                     curWord = ""
                 elif i == len(word) -1:
@@ -19,4 +19,7 @@ class WordSplitter:
 #Testcases
 if __name__ == '__main__':
     ws = WordSplitter()
-    assert ws.splitwords(["a", "cat","cats", "two", "dogs"], ['acat', "twodogs"]  ) == ["a", "cat", "two", "dogs"]
+    englishDictionary = ["drool", "cats", "clean", "code", "dogs", "materials",
+    "needed", "this", "is", "hard", "what", "are", "you", "smoking", "shot", "gun",
+    "down", "river", "super", "man", "rule", "acklen", "developers", "are", "amazing"]
+    assert ws.splitwords(englishDictionary, ['materiAlsriver', "dogsare"]) == ["materiAls", "river", "dogs", "are"]

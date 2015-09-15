@@ -9,7 +9,7 @@ class Fibonacci:
         return (f1, f2)
 
     def replaceVowelsWithFib(self, wordList, startingFib):
-        vowels = "aeiou"
+        vowels = "aeiouy"
         newList = []
         f1, f2 = self.fib(startingFib)
         for word in wordList:

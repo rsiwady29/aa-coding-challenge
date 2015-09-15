@@ -1,6 +1,6 @@
 class VowelShift:
     def shiftVowels(self,words):
-        vowels = "aeiou"
+        vowels = "aeiouy"
         newListOfWords = []
         for word in words:
             l = list(word)
@@ -24,3 +24,4 @@ if __name__ == '__main__':
     vs = VowelShift()
     assert vs.shiftVowels([]) == []
     assert vs.shiftVowels(["abc", "bca", "aa", "hello"]) == ["bac", "abc", "aa", "ohlel"]
+    assert vs.shiftVowels(["hEllo", "bOok", "read", "NeEd", "paliNdromE"]) == ["ohlEl","boOk", "raed", "NEed", "EplaNidrmo"]

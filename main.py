@@ -9,7 +9,9 @@ class Main(Resource):
     def get(self):
         return {'test':'Hello World!'}
     def post(self):
-        return eval(request.data)['secret']
+        secret = eval(request.data)['secret']
+        print secret
+        return secret
 
 api.add_resource(Main, '/')
 
