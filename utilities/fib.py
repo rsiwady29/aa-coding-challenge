@@ -1,7 +1,6 @@
 class Fibonacci:
     def fib(self, n):
         f1,f2 = 0, 1
-        n = int(n)
         if n == 0: return (0,1)
         while f2 != n:
             f1, f2 = f2, f1+f2
